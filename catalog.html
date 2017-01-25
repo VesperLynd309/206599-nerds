@@ -2,149 +2,190 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Дизайн-студия «Нёрдс» - Каталог товаров</title>
   </head>
   <body>
     <header class="main-header">
       <div class="container">
-        <img class="index-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Дизайн-студия «Нёрдс»">
+        <a class="catalog-logo">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Дизайн-студия «Нёрдс»">
+        </a>
         <nav class="main-navigation">
           <ul>
-          	<li>
-          	  <a href="#">Студия</a>
-          	</li>
-          	<li>
-          	  <a href="#">Клиенты</a>
-          	</li>
-          	<li>
-          	  <a href="#">Магазин</a>	
-          	</li>
-          	<li>
-          	  <a href="#">Контакты</a>	
-          	</li>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a> 
+            </li>
+            <li>
+              <a href="#">Контакты</a>  
+            </li>
           </ul>
         </nav>
-        <a class="basket" href="#">Коорзина</a>
-        <h1>Магазин готовых шаблонов</h1>
+        <div class="basket">
+          <a href="#">Корзина</a>
+        </div>
       </div>
     </header>
     <main>
-      <div class="filters">
-        <form>
-          <label for="adaptive-field">
-            <input class="active" id="adaptive-field" type="radio" name="adaptive">Адаптивная
-          </label>
-          <label for="fixed-field">
-            <input id="fixed-field" type="radio" name="fixed">Фиксированная
-          </label>
-          <label for="rubber-field">
-            <input id="rubber-field" type="radio" name="rubber">Резиновая
-          </label>
-        </form>
-        <form>
-          <label for="slider-field">
-            <input id="slider-field" type="checkbox" name="slider">Слайдер
-          </label>
-          <label for="features-field">
-            <input id="features-field" type="checkbox" name="features">Блок преимуществ
-          </label>
-          <label for="news-field">
-            <input id="news-field" type="checkbox" name="news">Новости
-          </label>
-          <label for="gallery-field">
-            <input id="gallery-field" type="checkbox" name="gallery">Галерея
-          </label>
-          <label for="basket-field">
-            <input id="basket-field" type="checkbox" name="basket">Корзина
-          </label>
-        </form>
-        <a class="btn" href="#">Показать</a>
+      <div class="container">
+        <h1>Магазин готовых шаблонов</h1>
       </div>
-      <div class="sort">
-        <p>Сортировать:</p>
-        <p>По цене</p>
-        <p>По типу</p>
-        <p>По названию</p>
+      <div class="catalog-content container">
+        <div class="catalog-content-left">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <h2>Стоимость</h2>
+            <input type="range" min="0" max="15000">
+            <h2>Сетка</h2>
+            <ul>
+              <li>
+                <input id="adaptive" type="radio" name="grid"/>
+                <label for="adaptive">Адаптивная<label>
+              </li>
+              <li>
+                <input id="fixed" type="radio" name="grid"/>
+                <label for="fixed">Фиксированная<label>
+              </li>
+              <li>
+                <input id="rubber" type="radio" name="grid"/>
+                <label for="rubber">Резиновая<label>
+              </li>
+            </ul>
+            <h2>Особенности</h2>
+            <ul>
+              <li>
+                <input id="slider" type="checkbox" name="slider"/>
+                <label for="slider">Слайдер<label>
+              </li>
+              <li>
+                <input id="features" type="checkbox" name="features"/>
+                <label for="features">Блок преимуществ<label>
+              </li>
+              <li>
+                <input id="news" type="checkbox" name="news"/>
+                <label for="news">Новости<label>
+              </li>
+              <li>
+                <input id="gallery" type="checkbox" name="gallery"/>
+                <label for="gallery">Галерея<label>
+              </li>
+              <li>
+                <input id="basket" type="checkbox" name="basket"/>
+                <label for="basket">Корзина<label>
+              </li>
+            </ul>
+            <a class="btn" href="#">Показать</a>
+          </form>
+        </div>
+        <div class="catalog-content-right">
+          <div class="sort">
+            <h3 class="sort-left">Сортировать</h3>
+            <div class="sort-right">
+              <a href="#">По цене</a>
+              <a href="#">По типу</a> 
+              <a href="#">По названию</a>
+            </div>
+          </div>
+          <div class="items">
+            <div class="item">
+              <div class="item-image">
+                <img src="http://placehold.it/150x100" width="200" height="500" alt="Sedona">
+              </div>
+              <div class="item-info">
+                <a href="#"><h2>Sedona</h2></a>
+                <p>Информационный сайт для туристов</p>
+                <a class="btn" href="#">9 900 руб.</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-image">
+                <img src="http://placehold.it/150x100" width="200" height="500" alt="Pink">
+              </div>
+              <div class="item-info">
+                <a href="#"><h2>Pink App</h2></a>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="btn" href="#">9 900 руб.</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-image">
+                <img src="http://placehold.it/150x100" width="200" height="500" alt="Borodinski">
+              </div>
+              <div class="item-info">
+                <a href="#"><h2>Barbershop</h2></a>
+                <p>Сайт салона красоты. Для мужчин, да.</p>
+                <a class="btn" href="#">9 900 руб.</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-image">
+                <img src="http://placehold.it/150x100" width="200" height="500" alt="Mishka">
+              </div>
+              <div class="item-info">
+                <a href="#"><h2>Mishka</h2></a>
+                <p>Интернет-магазин вязаных игрушек</p>
+                <a class="btn" href="#">9 900 руб.</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-image">
+                <img src="http://placehold.it/150x100" width="200" height="500" alt="A Plus">
+              </div>
+              <div class="item-info">
+                <a href="#"><h2>A Plus</h2></a>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a class="btn" href="#">9 900 руб.</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-image">
+                <img src="http://placehold.it/150x100" width="200" height="500" alt="Кваст">
+              </div>
+              <div class="item-info">
+                <a href="#"><h2>Кваст</h2></a>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a class="btn" href="#">9 900 руб.</a>
+              </div>
+            </div>
+          </div>
+          <nav class="pagination">
+            <ul>
+              <li>
+                <a class="page disabled" href="#">1</a>
+              </li>
+              <li>
+                <a class="page" href="#">2</a>
+              </li>
+              <li>
+                <a class="page" href="#">3</a>
+              </li>
+              <li>
+                <a class="next-page" href="#">Следующая</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      <div class="location">
+        <div class="map">
+          <img src="http://placehold.it/1000x300" width="1000" height="300" alt="Карта">
+        </div>
+        <div class="address">
+          <h2>Nёrds design studio</h2>
+          <p>191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn" href="#">Напишите нам</a>
+        </div>
+        <div class="location-logo">
+          <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="Nёrds">
+          </a>
+        </div>
       </div>
-      <div class="catalog-items">
-        <div class="item">
-          <img src="http://placehold.it/150x100" width="200" height="500" alt="Sedona">
-          <div class="item-info">
-            <h2>Sedona</h2>
-            <p>Информационный сайт для туристов</p>
-            <a class="btn price" href="#">9 900 руб.</a>
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://placehold.it/150x100" width="200" height="500" alt="Pink">
-          <div class="item-info">
-            <h2>Pink App</h2>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="btn price" href="#">9 900 руб.</a>
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://placehold.it/150x100" width="200" height="500" alt="Borodinski">
-          <div class="item-info">
-            <h2>Barbershop</h2>
-            <p>Сайт салона красоты. Для мужчин, да.</p>
-            <a class="btn price" href="#">9 900 руб.</a>
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://placehold.it/150x100" width="200" height="500" alt="Mishka">
-          <div class="item-info">
-            <h2>Mishka</h2>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a class="btn price" href="#">9 900 руб.</a>
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://placehold.it/150x100" width="200" height="500" alt="A Plus">
-          <div class="item-info">
-            <h2>A Plus</h2>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a class="btn price" href="#">9 900 руб.</a>
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://placehold.it/150x100" width="200" height="500" alt="Кваст">
-          <div class="item-info">
-            <h2>Кваст</h2>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a class="btn price" href="#">9 900 руб.</a>
-          </div>
-        </div>
-      </div>
-      <nav class="pagination">
-        <ul>
-          <li>
-            <a class="active" href="#">1</a>
-          </li>
-          <li>
-            <a href="#">2</a>
-          </li>
-          <li>
-            <a href="#">3</a>
-          </li>
-          <li>
-            <a href="#">Следующая</a>
-          </li>
-        </ul>
-      </nav>	  
     </main>
-    <div class="map">
-      <!--Карту нужно добавлять как-то иначе, но пока оставлю так-->      
-      <img src="http://placehold.it/1000x300" width="1000" height="300" alt="Карта">
-      <div class="address">
-      <h2>Nёrds design studio</h2>
-    	<p>191186, Санкт-Петербург,<br>
-    	ул. Б. Конюшенная, д. 19/8</p>
-    	<p>тел. +7 (812) 275-75-75</p>
-    	<a class="btn" href="#">Напишите нам</a>
-      </div>
-        <img class="index-logo" src="http://placehold.it/200x200" width="200" height="200" alt="Nёrds">
-    </div>
     <footer class="main-footer container">
       <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -153,7 +194,7 @@
       </section>
       <b>Давайте дружить, это выгодно!</b>
       <p>скидка 10% для друзей из социальных сетей.</p>
-      </div>
     </footer>
   </body>
-</html>
+  </html>
+  

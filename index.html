@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Дизайн-студия «Нёрдс»</title>
   </head>
   <body>
     <header class="main-header">
@@ -34,9 +34,11 @@
     <main>
       <div class="container">
         <div class="sliders">
-          <button class="sliders-btn active"></button>
-      	  <button class="sliders-btn"></button>
-      	  <button class="sliders-btn"></button>
+          <div class="sliders-btns">
+            <button class="sliders-btn active"></button>
+      	    <button class="sliders-btn"></button>
+      	    <button class="sliders-btn"></button>
+      	  </div>
           <div class="slider-item">
           	<div class="slider-item-left">
           	  <b>Долго, дорого, скрупулезно.</b>
@@ -151,6 +153,25 @@
     	  ул. Б. Конюшенная, д. 19/8</p>
     	  <p>тел. +7 (812) 275-75-75</p>
     	  <a class="btn" href="#">Напишите нам</a>
+        </div>
+        <div class="popup">
+          <div class="popup-content">
+            <h2>Напишите нам</h2>
+            <div class="user-message">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label>Ваше имя
+                  <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+                </label>
+                <label>Ваш e-mail
+                  <input type="text" name="email" placeholder="Для отправки ответа">
+                </label>
+                <label>Текст письма
+                  <textarea name="message" placeholder="В свободной форме"></textarea>
+                </label>
+                <button class="popup-btn" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="location-logo">
           <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="Nёrds">
