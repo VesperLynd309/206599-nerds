@@ -8,7 +8,7 @@
     <header class="main-header">
       <div class="container">
         <a class="catalog-logo">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Дизайн-студия «Нёрдс»">
+          <img src="img/index-logo.png" width="160" height="65" alt="Дизайн-студия «Нёрдс»">
         </a>
         <nav class="main-navigation">
           <ul>
@@ -38,9 +38,9 @@
       <div class="catalog-content container">
         <div class="catalog-content-left">
           <form action="https://echo.htmlacademy.ru" method="post">
-            <h2>Стоимость</h2>
+            <h3>Стоимость</h3>
             <input type="range" min="0" max="15000">
-            <h2>Сетка</h2>
+            <h3>Сетка</h3>
             <ul>
               <li>
                 <input id="adaptive" type="radio" name="grid"/>
@@ -55,7 +55,7 @@
                 <label for="rubber">Резиновая<label>
               </li>
             </ul>
-            <h2>Особенности</h2>
+            <h3>Особенности</h3>
             <ul>
               <li>
                 <input id="slider" type="checkbox" name="slider"/>
@@ -93,60 +93,60 @@
           <div class="items">
             <div class="item">
               <div class="item-image">
-                <img src="http://placehold.it/150x100" width="200" height="500" alt="Sedona">
+                <img src="img/sedona.png" width="316" height="660" alt="Sedona">
               </div>
               <div class="item-info">
-                <a href="#"><h2>Sedona</h2></a>
+                <a href="#"><h3>Sedona</h3></a>
                 <p>Информационный сайт для туристов</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="item">
               <div class="item-image">
-                <img src="http://placehold.it/150x100" width="200" height="500" alt="Pink">
+                <img src="img/pink.png" width="316" height="660" alt="Pink">
               </div>
               <div class="item-info">
-                <a href="#"><h2>Pink App</h2></a>
+                <a href="#"><h3>Pink App</h3></a>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="item">
               <div class="item-image">
-                <img src="http://placehold.it/150x100" width="200" height="500" alt="Borodinski">
+                <img src="img/borodinski.png" width="316" height="660" alt="Borodinski">
               </div>
               <div class="item-info">
-                <a href="#"><h2>Barbershop</h2></a>
+                <a href="#"><h3>Barbershop</h3></a>
                 <p>Сайт салона красоты. Для мужчин, да.</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="item">
               <div class="item-image">
-                <img src="http://placehold.it/150x100" width="200" height="500" alt="Mishka">
+                <img src="img/mishka.png" width="316" height="660" alt="Mishka">
               </div>
               <div class="item-info">
-                <a href="#"><h2>Mishka</h2></a>
+                <a href="#"><h3>Mishka</h3></a>
                 <p>Интернет-магазин вязаных игрушек</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="item">
               <div class="item-image">
-                <img src="http://placehold.it/150x100" width="200" height="500" alt="A Plus">
+                <img src="img/aplus.png" width="316" height="660" alt="A Plus">
               </div>
               <div class="item-info">
-                <a href="#"><h2>A Plus</h2></a>
+                <a href="#"><h3>A Plus</h3></a>
                 <p>Лендинг курсов повышения квалификации</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="item">
               <div class="item-image">
-                <img src="http://placehold.it/150x100" width="200" height="500" alt="Кваст">
+                <img src="img/kvast.png" width="316" height="660" alt="Кваст">
               </div>
               <div class="item-info">
-                <a href="#"><h2>Кваст</h2></a>
+                <a href="#"><h3>Кваст</h3></a>
                 <p>Промо-сайт производителя крафтового кваса</p>
                 <a class="btn" href="#">9 900 руб.</a>
               </div>
@@ -171,17 +171,36 @@
         </div>
       <div class="location">
         <div class="map">
-          <img src="http://placehold.it/1000x300" width="1000" height="300" alt="Карта">
+          <img src="img/map.jpg" width="1440" height="415" alt="Карта">
         </div>
         <div class="address">
-          <h2>Nёrds design studio</h2>
+          <h2 class="address-title">Nёrds design studio</h2>
           <p>191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
           <a class="btn" href="#">Напишите нам</a>
         </div>
+        <div class="popup">
+          <div class="popup-content">
+            <h2 class="popup-title">Напишите нам</h2>
+            <div class="user-message">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label>Ваше имя
+                  <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+                </label>
+                <label>Ваш e-mail
+                  <input type="text" name="email" placeholder="Для отправки ответа">
+                </label>
+                <label>Текст письма
+                  <textarea name="message" placeholder="В свободной форме"></textarea>
+                </label>
+                <button class="popup-btn" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
         <div class="location-logo">
-          <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="Nёrds">
+          <a href="#"><img src="img/marker.png" width="251" height="190" height="200" alt="Nёrds">
           </a>
         </div>
       </div>
