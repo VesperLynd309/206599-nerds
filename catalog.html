@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Дизайн-студия «Нёрдс» - Каталог товаров</title>
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <a class="catalog-logo">
           <img src="img/index-logo.png" width="160" height="65" alt="Дизайн-студия «Нёрдс»">
         </a>
@@ -33,142 +34,143 @@
     </header>
     <main>
       <div class="container">
-        <h1>Магазин готовых шаблонов</h1>
-      </div>
-      <div class="catalog-content container">
-        <div class="catalog-content-left">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <h3>Стоимость</h3>
-            <input type="range" min="0" max="15000">
-            <h3>Сетка</h3>
-            <ul>
-              <li>
-                <input id="adaptive" type="radio" name="grid"/>
-                <label for="adaptive">Адаптивная<label>
-              </li>
-              <li>
-                <input id="fixed" type="radio" name="grid"/>
-                <label for="fixed">Фиксированная<label>
-              </li>
-              <li>
-                <input id="rubber" type="radio" name="grid"/>
-                <label for="rubber">Резиновая<label>
-              </li>
-            </ul>
-            <h3>Особенности</h3>
-            <ul>
-              <li>
-                <input id="slider" type="checkbox" name="slider"/>
-                <label for="slider">Слайдер<label>
-              </li>
-              <li>
-                <input id="features" type="checkbox" name="features"/>
-                <label for="features">Блок преимуществ<label>
-              </li>
-              <li>
-                <input id="news" type="checkbox" name="news"/>
-                <label for="news">Новости<label>
-              </li>
-              <li>
-                <input id="gallery" type="checkbox" name="gallery"/>
-                <label for="gallery">Галерея<label>
-              </li>
-              <li>
-                <input id="basket" type="checkbox" name="basket"/>
-                <label for="basket">Корзина<label>
-              </li>
-            </ul>
-            <a class="btn" href="#">Показать</a>
-          </form>
-        </div>
-        <div class="catalog-content-right">
-          <div class="sort">
-            <h3 class="sort-left">Сортировать</h3>
-            <div class="sort-right">
-              <a href="#">По цене</a>
-              <a href="#">По типу</a> 
-              <a href="#">По названию</a>
-            </div>
+       <h1>Магазин готовых шаблонов</h1>
+        <div class="catalog-content clearfix">
+          <div class="catalog-content-left">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <h3>Стоимость</h3>
+              <input type="range" min="0" max="15000">
+              <h3>Сетка</h3>
+              <ul>
+                <li>
+                  <input id="adaptive" type="radio" name="grid"/>
+                  <label for="adaptive">Адаптивная<label>
+                </li>
+                <li>
+                  <input id="fixed" type="radio" name="grid"/>
+                  <label for="fixed">Фиксированная<label>
+                </li>
+                <li>
+                  <input id="rubber" type="radio" name="grid"/>
+                  <label for="rubber">Резиновая<label>
+                </li>
+              </ul>
+              <h3>Особенности</h3>
+              <ul>
+                <li>
+                  <input id="slider" type="checkbox" name="slider"/>
+                  <label for="slider">Слайдер<label>
+                </li>
+                <li>
+                  <input id="features" type="checkbox" name="features"/>
+                  <label for="features">Блок преимуществ<label>
+                </li>
+                <li>
+                  <input id="news" type="checkbox" name="news"/>
+                  <label for="news">Новости<label>
+                </li>
+                <li>
+                  <input id="gallery" type="checkbox" name="gallery"/>
+                  <label for="gallery">Галерея<label>
+                </li>
+                <li>
+                  <input id="basket" type="checkbox" name="basket"/>
+                  <label for="basket">Корзина<label>
+                </li>
+              </ul>
+              <a class="btn" href="#">Показать</a>
+            </form>
           </div>
-          <div class="items">
-            <div class="item">
-              <div class="item-image">
-                <img src="img/sedona.png" width="316" height="660" alt="Sedona">
-              </div>
-              <div class="item-info">
-                <a href="#"><h3>Sedona</h3></a>
-                <p>Информационный сайт для туристов</p>
-                <a class="btn" href="#">9 900 руб.</a>
+          <div class="catalog-content-right">
+            <div class="sort clearfix">
+              <h3 class="sort-left">Сортировать</h3>
+              <div class="sort-right">
+                <a class="sort-type" href="#">По цене</a>
+                <a class="sort-type" href="#">По типу</a> 
+                <a class="sort-type" href="#">По названию</a>
               </div>
             </div>
-            <div class="item">
-              <div class="item-image">
+            <div class="items clearfix">
+              <div class="item">
+                <div class="item-image">
+                  <img src="img/sedona.png" width="316" height="660" alt="Sedona">
+                </div>
+                <div class="item-info">
+                  <a href="#"><h3>Sedona</h3></a>
+                  <p>Информационный сайт для туристов</p>
+                  <a class="btn" href="#">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image">
                 <img src="img/pink.png" width="316" height="660" alt="Pink">
+                </div>
+                <div class="item-info">
+                  <a href="#"><h3>Pink App</h3></a>
+                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <a class="btn" href="#">9 900 руб.</a>
+                </div>
               </div>
-              <div class="item-info">
-                <a href="#"><h3>Pink App</h3></a>
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <a class="btn" href="#">9 900 руб.</a>
+              <div class="item">
+                <div class="item-image">
+                  <img src="img/borodinski.png" width="316" height="660" alt="Borodinski">
+                </div>
+                <div class="item-info">
+                  <a href="#"><h3>Barbershop</h3></a>
+                  <p>Сайт салона красоты. Для мужчин, да.</p>
+                  <a class="btn" href="#">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image">
+                  <img src="img/mishka.png" width="316" height="660" alt="Mishka">
+                </div>
+                <div class="item-info">
+                  <a href="#"><h3>Mishka</h3></a>
+                  <p>Интернет-магазин вязаных игрушек</p>
+                  <a class="btn" href="#">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image">
+                  <img src="img/aplus.png" width="316" height="660" alt="A Plus">
+                </div>
+                <div class="item-info">
+                  <a href="#"><h3>A Plus</h3></a>
+                  <p>Лендинг курсов повышения квалификации</p>
+                  <a class="btn" href="#">9 900 руб.</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image">
+                  <img src="img/kvast.png" width="316" height="660" alt="Кваст">
+                </div>
+                <div class="item-info">
+                  <a href="#"><h3>Кваст</h3></a>
+                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <a class="btn" href="#">9 900 руб.</a>
+                </div>
               </div>
             </div>
-            <div class="item">
-              <div class="item-image">
-                <img src="img/borodinski.png" width="316" height="660" alt="Borodinski">
-              </div>
-              <div class="item-info">
-                <a href="#"><h3>Barbershop</h3></a>
-                <p>Сайт салона красоты. Для мужчин, да.</p>
-                <a class="btn" href="#">9 900 руб.</a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-image">
-                <img src="img/mishka.png" width="316" height="660" alt="Mishka">
-              </div>
-              <div class="item-info">
-                <a href="#"><h3>Mishka</h3></a>
-                <p>Интернет-магазин вязаных игрушек</p>
-                <a class="btn" href="#">9 900 руб.</a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-image">
-                <img src="img/aplus.png" width="316" height="660" alt="A Plus">
-              </div>
-              <div class="item-info">
-                <a href="#"><h3>A Plus</h3></a>
-                <p>Лендинг курсов повышения квалификации</p>
-                <a class="btn" href="#">9 900 руб.</a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="item-image">
-                <img src="img/kvast.png" width="316" height="660" alt="Кваст">
-              </div>
-              <div class="item-info">
-                <a href="#"><h3>Кваст</h3></a>
-                <p>Промо-сайт производителя крафтового кваса</p>
-                <a class="btn" href="#">9 900 руб.</a>
-              </div>
-            </div>
+            <nav class="pagination clearfix">
+              <ul>
+                <li class="page disabled">
+                  <a href="#">1</a>
+                </li>
+                <li class="page">
+                  <a href="#">2</a>
+                </li>
+                <li class="page">
+                  <a href="#">3</a>
+                </li>
+                <li class="next-page">
+                  <a href="#">Следующая</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="pagination">
-            <ul>
-              <li>
-                <a class="page disabled" href="#">1</a>
-              </li>
-              <li>
-                <a class="page" href="#">2</a>
-              </li>
-              <li>
-                <a class="page" href="#">3</a>
-              </li>
-              <li>
-                <a class="next-page" href="#">Следующая</a>
-              </li>
-            </ul>
-          </nav>
         </div>
+      </div>
       <div class="location">
         <div class="map">
           <img src="img/map.jpg" width="1440" height="415" alt="Карта">

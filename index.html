@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Дизайн-студия «Нёрдс»</title>
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <div class="index-logo">
+      <div class="container clearfix">
+        <a class="index-logo">
           <img src="img/index-logo.png" width="160" height="65" alt="Дизайн-студия «Нёрдс»">
-        </div>
+        </a>
         <nav class="main-navigation">
           <ul>
           	<li>
@@ -33,7 +34,7 @@
     </header>
     <main>
       <div class="container">
-        <div class="sliders">
+        <div class="sliders clearfix">
           <div class="sliders-btns">
             <button class="sliders-btn active"></button>
       	    <button class="sliders-btn"></button>
@@ -70,7 +71,7 @@
           	</div>
           </div>
         </div>
-        <div class="advantages">
+        <div class="advantages clearfix">
       	  <div class="advantage-item">
       	    <img src="img/advantage1.png" width="300" height="146" alt="Сайт">
             <h2>Веб-сайты</h2>
@@ -90,7 +91,7 @@
             <a class="advantage-item-btn" href="#">Заказать</a>
       	  </div>
         </div>
-        <div class="index-content">
+        <div class="index-content clearfix">
           <div class="index-content-left">
             <p class="index-content-title">Мы - маленькая, но гордая дизайн студия из Краснодара.</p>
             <p class="index-content-desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -120,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="partners">
+        <div class="partners clearfix">
           <div class="partner-item">
             <a href="#">
           	  <img class="htmlacademy" src="img/logo1.png" width="199" height="68" alt="Html Academy">
@@ -154,7 +155,7 @@
     	    <p>тел. +7 (812) 275-75-75</p>
     	    <a class="btn" href="#">Напишите нам</a>
         </div>
-        <div class="popup">
+        <div class="popup container">
           <div class="popup-content">
             <h2 class="popup-title">Напишите нам</h2>
             <div class="user-message">
@@ -180,13 +181,14 @@
       </div>
     </main>
     <footer class="main-footer container">
-      <section class="footer-social">
+      <section class="footer-social clearfix">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
       </section>
-      <b>Давайте дружить, это выгодно!</b>
-      <p>скидка 10% для друзей из социальных сетей.</p>
+      <div class="friendship">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
   </body>
