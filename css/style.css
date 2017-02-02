@@ -1,19 +1,13 @@
-body,
-h1,
-h2,
-h3 {
+body {
   font-family: 'Roboto', Verdana, sans-serif;
   color: #000000;
-}
-
-body {
   font-size: 16px;
   line-height: 1.2;
+  margin: 0;
 }
 
 h1 {
   text-align: center;
-
   font-size: 55px;
   line-height: 1;
   font-weight: medium;
@@ -31,6 +25,10 @@ h3 {
   font-weight: bold;
 }
 
+img {
+  max-width: 100%;
+}
+
 .clearfix::after {
   content: "";
 
@@ -46,25 +44,22 @@ h3 {
 
 
 /* ЛОГОТИП*/
-
 .index-logo,
 .catalog-logo {
   float: left;
   width: 160px;
-
   min-height: 130px;
 }
+
 .main-navigation {
   float: left;
   width: 560px;
-
   min-height: 130px;
 }
 
 .basket {
   float: right;
   width: 160px;
-
   min-height: 130px;
 }
 
@@ -76,26 +71,26 @@ h3 {
 }
 
 .advantages,
-.index-content,
 .partners {
   border-bottom: 2px solid #eeeeee;
 }
 
 /*СЛАЙДЕР*/
-.sliders {
+.sliders,
+.advantages,
+.index-content,
+.partners {
   margin-bottom: 80px;
 }
 
 .slider-item-left {
   float: left;
   width: 380px;
-
   min-height: 413px;
 }
 .slider-item-right {
   float: right;
   width: 760px;
-
   min-height: 413px;
 }
 
@@ -103,8 +98,7 @@ h3 {
   float: left;
   width: 300px;
   margin-right: 100px;
-
-  min-height: 427px;  
+  min-height: 347px;  
 }
 
 .advantage-item:last-child {
@@ -115,25 +109,32 @@ h3 {
 .index-content-left {
   float: left;
   width: 660px;
-
-  min-height: 525px;
+  min-height: 450px;
 }
 
 .index-content-right {
   float: right;
   width: 360px;
+  min-height: 450px;
+}
 
-  min-height: 525px;
+.feature {
+  float: left;
+  width: 120px;
+  min-height: 100px;
 }
 
 /*ССЫЛКИ НА ПАРТНЕРОВ*/
+.partners {
+  border-top: 2px solid #eeeeee;
+}
+
 .partner-item {
   float: left;
   width: 260px;
   margin-right: 40px;
   margin-top: 60px;
-
-  min-height: 180px;
+  min-height: 160px;
 }
 
 .partner-item:last-child {
@@ -142,9 +143,8 @@ h3 {
 
 /*КАРТА*/
 .location {
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 /*СОЦСЕТИ*/
@@ -156,14 +156,12 @@ h3 {
   float: left;
   width: 260px;
   margin-right: 140px;
-
   min-height: 80px;
 }
 
 .friendship {
   float: left;
   width: 560px;
-
   min-height: 80px;
 }
 
@@ -171,14 +169,12 @@ h3 {
 .catalog-content-left {
   float: left;
   width: 260px;
-
   min-height: 850px;  
 }
 
 .catalog-content-right {
   float: right;
   width: 760px;
-
   min-height: 2056px;  
 }
 
@@ -187,7 +183,6 @@ h3 {
   width: 360px;
   margin-right: 40px;
   margin-bottom: 40px;
-
   min-height: 660px;
 }
 
@@ -200,14 +195,12 @@ h3 {
   width: 160px;
   margin-top: 0;
   margin-bottom: 0;
-
   min-height: 133px;
 }
 
 .sort-right {
   float: right;
   width: 360px;
-
   min-height: 133px;
 }
 
