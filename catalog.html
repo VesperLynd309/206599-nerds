@@ -21,7 +21,7 @@
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <a href="#">Магазин</a> 
+              <a class="active" href="#">Магазин</a> 
             </li>
             <li>
               <a href="#">Контакты</a>  
@@ -84,9 +84,9 @@
           </div>
           <div class="catalog-content-right">
             <div class="sort clearfix">
-              <h3 class="sort-left">Сортировать</h3>
+              <h3 class="sort-left">Сортировать:</h3>
               <div class="sort-right">
-                <a class="sort-type" href="#">По цене</a>
+                <a class="sort-type active" href="#">По цене</a>
                 <a class="sort-type" href="#">По типу</a> 
                 <a class="sort-type" href="#">По названию</a>
               </div>
@@ -98,7 +98,8 @@
                 </div>
                 <div class="item-info">
                   <a href="#"><h3>Sedona</h3></a>
-                  <p>Информационный сайт для туристов</p>
+                  <p>Информационный сайт</p>
+                  <p>для туристов</p>
                   <a class="btn" href="#">9 900 руб.</a>
                 </div>
               </div>
@@ -108,7 +109,8 @@
                 </div>
                 <div class="item-info">
                   <a href="#"><h3>Pink App</h3></a>
-                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <p>Продуктовый лендинг</p>
+                  <p>приложения для iOS и Android</p>
                   <a class="btn" href="#">9 900 руб.</a>
                 </div>
               </div>
@@ -118,7 +120,8 @@
                 </div>
                 <div class="item-info">
                   <a href="#"><h3>Barbershop</h3></a>
-                  <p>Сайт салона красоты. Для мужчин, да.</p>
+                  <p>Сайт салона красоты.</p>
+                  <p>Для мужчин, да.</p>
                   <a class="btn" href="#">9 900 руб.</a>
                 </div>
               </div>
@@ -128,7 +131,8 @@
                 </div>
                 <div class="item-info">
                   <a href="#"><h3>Mishka</h3></a>
-                  <p>Интернет-магазин вязаных игрушек</p>
+                  <p>Интернет-магазин</p>
+                  <p>вязаных игрушек</p>
                   <a class="btn" href="#">9 900 руб.</a>
                 </div>
               </div>
@@ -138,7 +142,8 @@
                 </div>
                 <div class="item-info">
                   <a href="#"><h3>A Plus</h3></a>
-                  <p>Лендинг курсов повышения квалификации</p>
+                  <p>Лендинг курсов повышения</p>
+                  <p>квалификации</p>
                   <a class="btn" href="#">9 900 руб.</a>
                 </div>
               </div>
@@ -148,7 +153,8 @@
                 </div>
                 <div class="item-info">
                   <a href="#"><h3>Кваст</h3></a>
-                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <p>Промо-сайт производителя</p>
+                  <p>крафтового кваса</p>
                   <a class="btn" href="#">9 900 руб.</a>
                 </div>
               </div>
@@ -174,50 +180,52 @@
       </div>
       <div class="location">
         <div class="map">
-          <img src="img/map.jpg" width="1440" height="415" alt="Карта">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616394266!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1487090435825" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-        <div class="container">
+        <div class="contacts container">
           <div class="address">
             <h2 class="address-title">Nёrds design studio</h2>
-            <p>191186, Санкт-Петербург,<br>
+            <p class="post">191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
+            <p class="telephone">тел. +7 (812) 275-75-75</p>
             <a class="btn" href="#">Напишите нам</a>
           </div>
           <div class="popup">
-            <div class="popup-content">
+            <div class="popup-content container">
               <h2 class="popup-title">Напишите нам</h2>
+              <span class="popup-close">&times;</span>
               <div class="user-message">
                 <form action="https://echo.htmlacademy.ru" method="post">
-                  <label>Ваше имя
+                  <label class="name">
+                    <p>Ваше имя:</p>
                     <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
                   </label>
-                  <label>Ваш e-mail
+                  <label class="email">
+                    <p>Ваш e-mail:</p>
                     <input type="text" name="email" placeholder="Для отправки ответа">
                   </label>
-                  <label>Текст письма
+                  <label class="message">
+                    <p>Текст письма:</p>
                     <textarea name="message" placeholder="В свободной форме"></textarea>
                   </label>
-                  <button class="popup-btn" type="submit">Отправить</button>
+                  <button class="btn" type="submit">Отправить</button>
                 </form>
               </div>
             </div>
-          </div>
-          <div class="location-logo">
-            <a href="#"><img src="img/marker.png" width="251" height="190" alt="Nёrds">
-            </a>
           </div>
         </div>
       </div>
     </main>
     <footer class="main-footer container">
-      <section class="footer-social">
+      <section class="footer-social clearfix">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
       </section>
-      <b>Давайте дружить, это выгодно!</b>
-      <p>скидка 10% для друзей из социальных сетей.</p>
+      <div class="friendship">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Cкидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
   </body>
   </html>
